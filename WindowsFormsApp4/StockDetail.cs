@@ -10,18 +10,11 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp4
 {
-    public partial class Stock : Form
+    public partial class StockDetail : Form
     {
-        public Stock()
+        public StockDetail()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            StockDetail frmStockDetail = new StockDetail();
-            frmStockDetail.Show();
-
         }
     }
 }
