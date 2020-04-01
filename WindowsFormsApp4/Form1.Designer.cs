@@ -28,53 +28,122 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panelSlider = new System.Windows.Forms.Panel();
+            this.PanelBackground = new System.Windows.Forms.Panel();
+            this.panelMid = new System.Windows.Forms.Panel();
+            this.panelTop = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.panelLeft = new System.Windows.Forms.Panel();
+            this.btMnPromotion = new System.Windows.Forms.Button();
+            this.btMNvendor = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.btMNproduct = new System.Windows.Forms.Button();
             this.btMNemployee = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btManagement = new System.Windows.Forms.Button();
+            this.btBarcodeGenerate = new System.Windows.Forms.Button();
+            this.btProduct = new System.Windows.Forms.Button();
+            this.btOrder = new System.Windows.Forms.Button();
+            this.btStock = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.PanelBackground = new System.Windows.Forms.Panel();
-            this.btMNvendor = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panelSlider.SuspendLayout();
+            this.PanelBackground.SuspendLayout();
+            this.panelTop.SuspendLayout();
+            this.panelLeft.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // panelSlider
+            // PanelBackground
             // 
-            this.panelSlider.AutoScroll = true;
-            this.panelSlider.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.panelSlider.Controls.Add(this.btMNvendor);
-            this.panelSlider.Controls.Add(this.button11);
-            this.panelSlider.Controls.Add(this.btMNproduct);
-            this.panelSlider.Controls.Add(this.btMNemployee);
-            this.panelSlider.Controls.Add(this.button6);
-            this.panelSlider.Controls.Add(this.button5);
-            this.panelSlider.Controls.Add(this.button4);
-            this.panelSlider.Controls.Add(this.button3);
-            this.panelSlider.Controls.Add(this.button2);
-            this.panelSlider.Controls.Add(this.button1);
-            this.panelSlider.Controls.Add(this.panel1);
-            this.panelSlider.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelSlider.Location = new System.Drawing.Point(0, 0);
-            this.panelSlider.Name = "panelSlider";
-            this.panelSlider.Size = new System.Drawing.Size(200, 490);
-            this.panelSlider.TabIndex = 0;
-            this.panelSlider.Paint += new System.Windows.Forms.PaintEventHandler(this.panelSlider_Paint);
+            this.PanelBackground.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(36)))), ((int)(((byte)(84)))));
+            this.PanelBackground.Controls.Add(this.panelMid);
+            this.PanelBackground.Controls.Add(this.panelTop);
+            this.PanelBackground.Controls.Add(this.panelLeft);
+            this.PanelBackground.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PanelBackground.Location = new System.Drawing.Point(0, 0);
+            this.PanelBackground.Name = "PanelBackground";
+            this.PanelBackground.Size = new System.Drawing.Size(1200, 700);
+            this.PanelBackground.TabIndex = 1;
+            // 
+            // panelMid
+            // 
+            this.panelMid.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.panelMid.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelMid.Location = new System.Drawing.Point(200, 24);
+            this.panelMid.Name = "panelMid";
+            this.panelMid.Size = new System.Drawing.Size(1000, 676);
+            this.panelMid.TabIndex = 3;
+            // 
+            // panelTop
+            // 
+            this.panelTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.panelTop.Controls.Add(this.button2);
+            this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTop.Location = new System.Drawing.Point(200, 0);
+            this.panelTop.Name = "panelTop";
+            this.panelTop.Size = new System.Drawing.Size(1000, 24);
+            this.panelTop.TabIndex = 2;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(965, 1);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(35, 23);
+            this.button2.TabIndex = 0;
+            this.button2.Text = "X";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click_2);
+            // 
+            // panelLeft
+            // 
+            this.panelLeft.AutoScroll = true;
+            this.panelLeft.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.panelLeft.Controls.Add(this.btMnPromotion);
+            this.panelLeft.Controls.Add(this.btMNvendor);
+            this.panelLeft.Controls.Add(this.button11);
+            this.panelLeft.Controls.Add(this.btMNproduct);
+            this.panelLeft.Controls.Add(this.btMNemployee);
+            this.panelLeft.Controls.Add(this.btManagement);
+            this.panelLeft.Controls.Add(this.btBarcodeGenerate);
+            this.panelLeft.Controls.Add(this.btProduct);
+            this.panelLeft.Controls.Add(this.btOrder);
+            this.panelLeft.Controls.Add(this.btStock);
+            this.panelLeft.Controls.Add(this.button1);
+            this.panelLeft.Controls.Add(this.panel1);
+            this.panelLeft.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelLeft.Location = new System.Drawing.Point(0, 0);
+            this.panelLeft.Name = "panelLeft";
+            this.panelLeft.Size = new System.Drawing.Size(200, 700);
+            this.panelLeft.TabIndex = 1;
+            // 
+            // btMnPromotion
+            // 
+            this.btMnPromotion.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btMnPromotion.Location = new System.Drawing.Point(0, 378);
+            this.btMnPromotion.Name = "btMnPromotion";
+            this.btMnPromotion.Size = new System.Drawing.Size(200, 23);
+            this.btMnPromotion.TabIndex = 14;
+            this.btMnPromotion.Text = "ໂປຣໂມຊັ່ນ";
+            this.btMnPromotion.UseVisualStyleBackColor = true;
+            // 
+            // btMNvendor
+            // 
+            this.btMNvendor.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btMNvendor.Location = new System.Drawing.Point(0, 349);
+            this.btMNvendor.Name = "btMNvendor";
+            this.btMNvendor.Size = new System.Drawing.Size(200, 29);
+            this.btMNvendor.TabIndex = 13;
+            this.btMNvendor.Text = "ຜູ້ສະໜອງ";
+            this.btMNvendor.UseVisualStyleBackColor = true;
+            this.btMNvendor.Visible = false;
+            this.btMNvendor.Click += new System.EventHandler(this.btMNvendor_Click_1);
             // 
             // button11
             // 
             this.button11.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.button11.Location = new System.Drawing.Point(0, 467);
+            this.button11.Location = new System.Drawing.Point(0, 677);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(200, 23);
             this.button11.TabIndex = 11;
@@ -91,7 +160,7 @@
             this.btMNproduct.Text = "ຂໍ້ມູນສິນຄ້າ";
             this.btMNproduct.UseVisualStyleBackColor = true;
             this.btMNproduct.Visible = false;
-            this.btMNproduct.Click += new System.EventHandler(this.button10_Click);
+            this.btMNproduct.Click += new System.EventHandler(this.btMNproduct_Click);
             // 
             // btMNemployee
             // 
@@ -103,62 +172,62 @@
             this.btMNemployee.Text = "ຂໍ້ມູນພະນັກງານ";
             this.btMNemployee.UseVisualStyleBackColor = true;
             this.btMNemployee.Visible = false;
-            this.btMNemployee.Click += new System.EventHandler(this.btMNemployee_Click);
+            this.btMNemployee.Click += new System.EventHandler(this.btMNemployee_Click_1);
             // 
-            // button6
+            // btManagement
             // 
-            this.button6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button6.Location = new System.Drawing.Point(0, 262);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(200, 29);
-            this.button6.TabIndex = 6;
-            this.button6.Text = "ຈັດການຂໍ້ມູນ";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.btManagement.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btManagement.Location = new System.Drawing.Point(0, 262);
+            this.btManagement.Name = "btManagement";
+            this.btManagement.Size = new System.Drawing.Size(200, 29);
+            this.btManagement.TabIndex = 6;
+            this.btManagement.Text = "ຈັດການຂໍ້ມູນ";
+            this.btManagement.UseVisualStyleBackColor = true;
+            this.btManagement.Click += new System.EventHandler(this.btManagement_Click);
             // 
-            // button5
+            // btBarcodeGenerate
             // 
-            this.button5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button5.Location = new System.Drawing.Point(0, 233);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(200, 29);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "Barcode Generate";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.btBarcodeGenerate.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btBarcodeGenerate.Location = new System.Drawing.Point(0, 233);
+            this.btBarcodeGenerate.Name = "btBarcodeGenerate";
+            this.btBarcodeGenerate.Size = new System.Drawing.Size(200, 29);
+            this.btBarcodeGenerate.TabIndex = 5;
+            this.btBarcodeGenerate.Text = "Barcode Generate";
+            this.btBarcodeGenerate.UseVisualStyleBackColor = true;
+            this.btBarcodeGenerate.Click += new System.EventHandler(this.btBarcodeGenerate_Click);
             // 
-            // button4
+            // btProduct
             // 
-            this.button4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button4.Location = new System.Drawing.Point(0, 204);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(200, 29);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "ສິນຄ້າ";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.btProduct.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btProduct.Location = new System.Drawing.Point(0, 204);
+            this.btProduct.Name = "btProduct";
+            this.btProduct.Size = new System.Drawing.Size(200, 29);
+            this.btProduct.TabIndex = 4;
+            this.btProduct.Text = "ສິນຄ້າ";
+            this.btProduct.UseVisualStyleBackColor = true;
+            this.btProduct.Click += new System.EventHandler(this.button4_Click_1);
             // 
-            // button3
+            // btOrder
             // 
-            this.button3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button3.Location = new System.Drawing.Point(0, 175);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(200, 29);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "ໃບບິນສັ່ງເຄື່ອງ";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btOrder.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btOrder.Location = new System.Drawing.Point(0, 175);
+            this.btOrder.Name = "btOrder";
+            this.btOrder.Size = new System.Drawing.Size(200, 29);
+            this.btOrder.TabIndex = 3;
+            this.btOrder.Text = "ໃບບິນສັ່ງເຄື່ອງ";
+            this.btOrder.UseVisualStyleBackColor = true;
+            this.btOrder.Click += new System.EventHandler(this.button3_Click_1);
             // 
-            // button2
+            // btStock
             // 
-            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button2.Location = new System.Drawing.Point(0, 146);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(200, 29);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "ສາງ";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btStock.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btStock.Location = new System.Drawing.Point(0, 146);
+            this.btStock.Name = "btStock";
+            this.btStock.Size = new System.Drawing.Size(200, 29);
+            this.btStock.TabIndex = 2;
+            this.btStock.Text = "ສາງ";
+            this.btStock.UseVisualStyleBackColor = true;
+            this.btStock.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // button1
             // 
@@ -181,7 +250,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 117);
             this.panel1.TabIndex = 0;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label2
             // 
@@ -202,29 +270,6 @@
             this.label1.Size = new System.Drawing.Size(44, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "MR.TA ";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // PanelBackground
-            // 
-            this.PanelBackground.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(36)))), ((int)(((byte)(84)))));
-            this.PanelBackground.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PanelBackground.Location = new System.Drawing.Point(200, 0);
-            this.PanelBackground.Name = "PanelBackground";
-            this.PanelBackground.Size = new System.Drawing.Size(876, 490);
-            this.PanelBackground.TabIndex = 1;
-            this.PanelBackground.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelBackground_Paint);
-            // 
-            // btMNvendor
-            // 
-            this.btMNvendor.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btMNvendor.Location = new System.Drawing.Point(0, 349);
-            this.btMNvendor.Name = "btMNvendor";
-            this.btMNvendor.Size = new System.Drawing.Size(200, 29);
-            this.btMNvendor.TabIndex = 13;
-            this.btMNvendor.Text = "ຜູ້ສະໜອງ";
-            this.btMNvendor.UseVisualStyleBackColor = true;
-            this.btMNvendor.Visible = false;
-            this.btMNvendor.Click += new System.EventHandler(this.btMNvendor_Click);
             // 
             // pictureBox1
             // 
@@ -240,12 +285,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1076, 490);
+            this.ClientSize = new System.Drawing.Size(1200, 700);
             this.Controls.Add(this.PanelBackground);
-            this.Controls.Add(this.panelSlider);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-            this.panelSlider.ResumeLayout(false);
+            this.PanelBackground.ResumeLayout(false);
+            this.panelTop.ResumeLayout(false);
+            this.panelLeft.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -254,23 +302,26 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panelSlider;
+        private System.Windows.Forms.Panel PanelBackground;
+        private System.Windows.Forms.Panel panelLeft;
+        private System.Windows.Forms.Button btMnPromotion;
+        private System.Windows.Forms.Button btMNvendor;
         private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button btMNproduct;
         private System.Windows.Forms.Button btMNemployee;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btManagement;
+        private System.Windows.Forms.Button btBarcodeGenerate;
+        private System.Windows.Forms.Button btProduct;
+        private System.Windows.Forms.Button btOrder;
+        private System.Windows.Forms.Button btStock;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel PanelBackground;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btMNproduct;
-        private System.Windows.Forms.Button btMNvendor;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel panelTop;
+        private System.Windows.Forms.Panel panelMid;
+        private System.Windows.Forms.Button button2;
     }
 }
 
